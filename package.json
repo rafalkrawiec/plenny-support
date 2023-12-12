@@ -1,0 +1,73 @@
+{
+    "name": "@plenny/support",
+    "description": "Small package with common utilities written in typescript.",
+    "keywords": ["plenny", "support", "utility"],
+    "version": "0.1.0",
+    "license": "MIT",
+    "homepage": "https://github.com/rafalkrawiec/plenny-support",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rafalkrawiec/plenny-support.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rafalkrawiec/plenny-support/issues",
+        "email": "rafal.krawiec16@gmail.com"
+    },
+    "author": {
+        "name": "Rafał Krawiec",
+        "email": "rafal.krawiec16@gmail.com"
+    },
+    "type": "module",
+    "types": "./dist/support.d.ts",
+    "module": "./dist/support.js",
+    "main": "./dist/support.cjs",
+    "files": ["dist"],
+    "exports": {
+        ".": {
+            "types": "./dist/support.d.ts",
+            "import": "./dist/support.js",
+            "require": "./dist/support.cjs"
+        },
+        "./array": {
+            "types": "./dist/array.d.ts",
+            "import": "./dist/array.js",
+            "require": "./dist/array.cjs"
+        },
+        "./filesize": {
+            "types": "./dist/filesize.d.ts",
+            "import": "./dist/filesize.js",
+            "require": "./dist/filesize.cjs"
+        },
+        "./hash": {
+            "types": "./dist/hash.d.ts",
+            "import": "./dist/hash.js",
+            "require": "./dist/hash.cjs"
+        },
+        "./lookup": {
+            "types": "./dist/lookup.d.ts",
+            "import": "./dist/lookup.js",
+            "require": "./dist/lookup.cjs"
+        },
+        "./nested-set": {
+            "types": "./dist/nested-set.d.ts",
+            "import": "./dist/nested-set.js",
+            "require": "./dist/nested-set.cjs"
+        },
+        "./tap": {
+            "types": "./dist/tap.d.ts",
+            "import": "./dist/tap.js",
+            "require": "./dist/tap.cjs"
+        }
+    },
+    "scripts": {
+        "dev": "vite build -m development --watch",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "terser": "^5.26.0",
+        "typescript": "^5.0.0",
+        "vite": "^5.0.0",
+        "vite-plugin-dts": "^3.6.0"
+    }
+}
